@@ -39,5 +39,3 @@ class UserFollowingSerializer(serializers.ModelSerializer):
         fields = ['username']
         
     username = serializers.CharField(source='followed.username')
-
-    
